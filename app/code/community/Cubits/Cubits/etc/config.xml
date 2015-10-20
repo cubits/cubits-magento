@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cubits_Cubits>
+            <version>1.0</version>
+        </Cubits_Cubits>
+    </modules>
+	<frontend>
+        <routers>
+            <cubits_cubits>
+                <use>standard</use>
+                <args>
+                    <module>Cubits_Cubits</module>
+                    <frontName>cubits_cubits</frontName>
+                </args>
+            </cubits_cubits>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <Cubits>
+                <class>Cubits_Cubits_Block</class>
+            </Cubits>
+        </blocks>
+ 
+        <models>
+            <Cubits>
+                <class>Cubits_Cubits_Model</class>
+            </Cubits>
+        </models>
+ 
+        <resources>
+            <Cubits_setup>
+                <setup>
+                    <module>Cubits_Cubits</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </Cubits_setup>
+            <Cubits_write>
+                <connection>
+                  <use>core_write</use>
+                </connection>
+            </Cubits_write>
+            <Cubits_read>
+               <connection>
+                <use>core_read</use>
+              </connection>
+            </Cubits_read>
+        </resources>
+    </global>
+ 
+    <default>
+        <payment>
+            <Cubits>
+                <active>1</active>
+                <model>Cubits/paymentMethod</model>
+                <title>Bitcoin</title>
+ 
+                <payment_action>authorize</payment_action>
+                <callback_secret>generate</callback_secret>
+            </Cubits>
+         </payment>
+    </default>
+</config>

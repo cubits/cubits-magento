@@ -1,0 +1,3 @@
+[submodule "app/code/community/Cubits/Cubits/cubits-php"]
+	path = app/code/community/Cubits/Cubits/cubits-php
+	url = git@github.com:cubits/cubits-php

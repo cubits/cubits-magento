@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Cubits_Cubits>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+            </depends>
+        </Cubits_Cubits>
+    </modules>
+</config>

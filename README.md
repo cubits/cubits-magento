@@ -25,3 +25,7 @@ from the root of the plugin
 1. git submodule init
 
 2. git submodule update
+
+if none of these have the expected effect use the following command to clone the submodule in the correct directory
+
+3. git submodule add https://github.com/cubits/cubits-magento.git app/code/community/Cubits/Cubits/cubits-php
